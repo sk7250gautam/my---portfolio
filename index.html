@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Saksham | CSE Student</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <h2 class="logo">Saksham<span>.</span></h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button id="themeBtn">🌙</button>
+        </nav>
+    </header>
+
+
+    <!-- Home -->
+    <section id="home" class="hero">
+
+        <div class="hero-text">
+            <p class="small">HELLO, I'M</p>
+
+            <h1>Saksham Gautam</h1>
+
+            <h2>Computer Science Engineering Student</h2>
+
+            <p>
+                I am learning programming, web development and
+                building interesting projects.
+            </p>
+
+            <div class="buttons">
+                <a href="#projects" class="btn">View Projects</a>
+                <a href="#contact" class="btn second">Contact Me</a>
+            </div>
+        </div>
+
+        <div class="hero-card">
+            <div class="circle">SG</div>
+            <h2>CSE Student</h2>
+            <p>Learning • Building • Improving</p>
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-box">
+            <p>
+                Hello! I am Saksham, a Computer Science Engineering
+                student. I am interested in programming and web
+                development.
+            </p>
+
+            <p>
+                Currently I am learning HTML, CSS, JavaScript,
+                Python, C++ and other technologies used in software
+                development.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">
+                <h3>HTML</h3>
+                <div class="bar">
+                    <div class="progress html"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <h3>CSS</h3>
+                <div class="bar">
+                    <div class="progress css"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <div class="bar">
+                    <div class="progress js"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <h3>Python</h3>
+                <div class="bar">
+                    <div class="progress python"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <h3>C++</h3>
+                <div class="bar">
+                    <div class="progress cpp"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects">
+
+        <h2 class="section-title">My Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="project-card">
+                <span>01</span>
+                <h3>Portfolio Website</h3>
+                <p>
+                    A personal portfolio website created using
+                    HTML, CSS and JavaScript.
+                </p>
+                <button onclick="showMessage('Portfolio Website')">
+                    View Project
+                </button>
+            </div>
+
+
+            <div class="project-card">
+                <span>02</span>
+                <h3>Cricket Score Website</h3>
+                <p>
+                    A frontend cricket score interface with
+                    match information and score display.
+                </p>
+                <button onclick="showMessage('Cricket Score Website')">
+                    View Project
+                </button>
+            </div>
+
+
+            <div class="project-card">
+                <span>03</span>
+                <h3>Python Programs</h3>
+                <p>
+                    Collection of beginner programming projects
+                    created while learning Python.
+                </p>
+                <button onclick="showMessage('Python Programs')">
+                    View Project
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h2 class="section-title">Contact Me</h2>
+
+        <div class="contact-box">
+
+            <input type="text" id="name" placeholder="Your Name">
+
+            <input type="email" id="email" placeholder="Your Email">
+
+            <textarea id="message" placeholder="Your Message"></textarea>
+
+            <button class="send-btn" onclick="sendMessage()">
+                Send Message
+            </button>
+
+            <p id="result"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Saksham Gautam | My Portfolio</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
