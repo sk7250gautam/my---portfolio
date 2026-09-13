@@ -3,212 +3,223 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Saksham | CSE Student</title>
-
+    <title>Saksham Gautam | CSE Student</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <header>
-        <nav>
-            <h2 class="logo">Saksham<span>.</span></h2>
+<header>
+    <nav>
+        <div class="logo">Saksham<span>.</span></div>
 
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
 
-            <button id="themeBtn">🌙</button>
-        </nav>
-    </header>
+        <button id="themeBtn">🌙</button>
+    </nav>
+</header>
+
+<main>
+
+<section id="home" class="hero">
+    <div class="hero-content">
+        <p class="tag">WELCOME TO MY PORTFOLIO</p>
+
+        <h1>Hi, I'm <span>Saksham</span></h1>
+
+        <h2>Computer Science Engineering Student</h2>
+
+        <p class="intro">
+            I love learning programming, building websites and
+            turning ideas into real projects.
+        </p>
+
+        <div class="buttons">
+            <a href="#projects" class="primary-btn">View My Work →</a>
+            <a href="#contact" class="outline-btn">Contact Me</a>
+        </div>
+    </div>
+
+    <div class="profile-card">
+        <div class="profile-circle">SG</div>
+        <h3>Saksham Gautam</h3>
+        <p>CSE Student • Developer</p>
+
+        <div class="status">
+            <span></span> Available for learning & projects
+        </div>
+    </div>
+</section>
 
 
-    <!-- Home -->
-    <section id="home" class="hero">
+<section id="about">
+    <p class="section-label">ABOUT ME</p>
+    <h2 class="section-title">A little about me</h2>
 
-        <div class="hero-text">
-            <p class="small">HELLO, I'M</p>
-
-            <h1>Saksham Gautam</h1>
-
-            <h2>Computer Science Engineering Student</h2>
-
+    <div class="about-grid">
+        <div class="about-text">
             <p>
-                I am learning programming, web development and
-                building interesting projects.
+                I'm a Computer Science Engineering student who is
+                passionate about technology and software development.
             </p>
 
-            <div class="buttons">
-                <a href="#projects" class="btn">View Projects</a>
-                <a href="#contact" class="btn second">Contact Me</a>
-            </div>
-        </div>
-
-        <div class="hero-card">
-            <div class="circle">SG</div>
-            <h2>CSE Student</h2>
-            <p>Learning • Building • Improving</p>
-        </div>
-
-    </section>
-
-
-    <!-- About -->
-    <section id="about">
-
-        <h2 class="section-title">About Me</h2>
-
-        <div class="about-box">
             <p>
-                Hello! I am Saksham, a Computer Science Engineering
-                student. I am interested in programming and web
-                development.
-            </p>
-
-            <p>
-                Currently I am learning HTML, CSS, JavaScript,
-                Python, C++ and other technologies used in software
-                development.
+                I'm currently improving my skills in programming,
+                frontend development and problem solving by creating
+                practical projects.
             </p>
         </div>
 
-    </section>
-
-
-    <!-- Skills -->
-    <section id="skills">
-
-        <h2 class="section-title">My Skills</h2>
-
-        <div class="skills-container">
-
-            <div class="skill">
-                <h3>HTML</h3>
-                <div class="bar">
-                    <div class="progress html"></div>
-                </div>
+        <div class="info-card">
+            <div>
+                <strong>🎓</strong>
+                <h3>Education</h3>
+                <p>B.Tech CSE</p>
             </div>
 
-            <div class="skill">
-                <h3>CSS</h3>
-                <div class="bar">
-                    <div class="progress css"></div>
-                </div>
+            <div>
+                <strong>💻</strong>
+                <h3>Focus</h3>
+                <p>Web Development</p>
             </div>
 
-            <div class="skill">
-                <h3>JavaScript</h3>
-                <div class="bar">
-                    <div class="progress js"></div>
-                </div>
+            <div>
+                <strong>🚀</strong>
+                <h3>Goal</h3>
+                <p>Software Developer</p>
             </div>
+        </div>
+    </div>
+</section>
 
-            <div class="skill">
-                <h3>Python</h3>
-                <div class="bar">
-                    <div class="progress python"></div>
-                </div>
-            </div>
 
-            <div class="skill">
-                <h3>C++</h3>
-                <div class="bar">
-                    <div class="progress cpp"></div>
-                </div>
-            </div>
+<section id="skills">
+    <p class="section-label">MY SKILLS</p>
+    <h2 class="section-title">Technologies I'm learning</h2>
 
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <div class="skill-icon">HTML</div>
+            <h3>HTML</h3>
+            <p>Building the structure of websites.</p>
         </div>
 
-    </section>
-
-
-    <!-- Projects -->
-    <section id="projects">
-
-        <h2 class="section-title">My Projects</h2>
-
-        <div class="projects-container">
-
-            <div class="project-card">
-                <span>01</span>
-                <h3>Portfolio Website</h3>
-                <p>
-                    A personal portfolio website created using
-                    HTML, CSS and JavaScript.
-                </p>
-                <button onclick="showMessage('Portfolio Website')">
-                    View Project
-                </button>
-            </div>
-
-
-            <div class="project-card">
-                <span>02</span>
-                <h3>Cricket Score Website</h3>
-                <p>
-                    A frontend cricket score interface with
-                    match information and score display.
-                </p>
-                <button onclick="showMessage('Cricket Score Website')">
-                    View Project
-                </button>
-            </div>
-
-
-            <div class="project-card">
-                <span>03</span>
-                <h3>Python Programs</h3>
-                <p>
-                    Collection of beginner programming projects
-                    created while learning Python.
-                </p>
-                <button onclick="showMessage('Python Programs')">
-                    View Project
-                </button>
-            </div>
-
+        <div class="skill-card">
+            <div class="skill-icon">CSS</div>
+            <h3>CSS</h3>
+            <p>Designing responsive interfaces.</p>
         </div>
 
-    </section>
+        <div class="skill-card">
+            <div class="skill-icon">JS</div>
+            <h3>JavaScript</h3>
+            <p>Adding interaction and functionality.</p>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">PY</div>
+            <h3>Python</h3>
+            <p>Learning programming and problem solving.</p>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">C++</div>
+            <h3>C++</h3>
+            <p>Practising programming and DSA.</p>
+        </div>
+
+    </div>
+</section>
 
 
-    <!-- Contact -->
-    <section id="contact">
+<section id="projects">
+    <p class="section-label">PROJECTS</p>
+    <h2 class="section-title">Things I've built</h2>
 
-        <h2 class="section-title">Contact Me</h2>
+    <div class="projects-grid">
 
-        <div class="contact-box">
-
-            <input type="text" id="name" placeholder="Your Name">
-
-            <input type="email" id="email" placeholder="Your Email">
-
-            <textarea id="message" placeholder="Your Message"></textarea>
-
-            <button class="send-btn" onclick="sendMessage()">
-                Send Message
+        <div class="project">
+            <span class="number">01</span>
+            <h3>Personal Portfolio</h3>
+            <p>
+                A responsive personal portfolio website built
+                using HTML, CSS and JavaScript.
+            </p>
+            <button onclick="projectAlert('Personal Portfolio')">
+                Explore →
             </button>
-
-            <p id="result"></p>
-
         </div>
 
-    </section>
+        <div class="project">
+            <span class="number">02</span>
+            <h3>Cricket Score Website</h3>
+            <p>
+                A cricket-focused web interface displaying
+                scores and match information.
+            </p>
+            <button onclick="projectAlert('Cricket Score Website')">
+                Explore →
+            </button>
+        </div>
+
+        <div class="project">
+            <span class="number">03</span>
+            <h3>Python Projects</h3>
+            <p>
+                Small programming projects created while
+                learning Python fundamentals.
+            </p>
+            <button onclick="projectAlert('Python Projects')">
+                Explore →
+            </button>
+        </div>
+
+    </div>
+</section>
 
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Saksham Gautam | My Portfolio</p>
-    </footer>
+<section id="contact">
+    <p class="section-label">CONTACT</p>
+    <h2 class="section-title">Let's connect</h2>
+
+    <div class="contact-container">
+        <p>
+            Have an idea or want to connect? Send me a message.
+        </p>
+
+        <form id="contactForm">
+
+            <input type="text" id="name" placeholder="Your Name" required>
+
+            <input type="email" id="email" placeholder="Your Email" required>
+
+            <textarea id="message" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message 🚀</button>
+
+        </form>
+
+        <p id="formResult"></p>
+    </div>
+</section>
+
+</main>
 
 
-    <script src="script.js"></script>
+<footer>
+    <h3>Saksham<span>.</span></h3>
+    <p>Built with HTML • CSS • JavaScript</p>
+    <p>© 2026 Saksham Gautam</p>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>

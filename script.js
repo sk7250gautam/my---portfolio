@@ -1,5 +1,3 @@
-// Dark mode
-
 const themeBtn = document.getElementById("themeBtn");
 
 themeBtn.addEventListener("click", function () {
@@ -15,35 +13,27 @@ themeBtn.addEventListener("click", function () {
 });
 
 
-// Project button
+function projectAlert(projectName) {
 
-function showMessage(project) {
-
-    alert(project + " is selected!");
+    alert("You selected: " + projectName);
 
 }
 
 
-// Contact form
+const form = document.getElementById("contactForm");
 
-function sendMessage() {
+form.addEventListener("submit", function(event) {
+
+    event.preventDefault();
 
     const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
+    const result = document.getElementById("formResult");
 
-    const result = document.getElementById("result");
+    result.innerHTML =
+        "✅ Thanks " + name + "! Your message has been received.";
 
-    if (name === "" || email === "" || message === "") {
+    result.style.color = "#22c55e";
 
-        result.innerHTML = "⚠️ Please fill all fields.";
-        result.style.color = "red";
+    form.reset();
 
-    } else {
-
-        result.innerHTML = "✅ Message submitted successfully!";
-        result.style.color = "green";
-
-    }
-
-}
+});
