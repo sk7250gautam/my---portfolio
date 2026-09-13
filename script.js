@@ -1,3 +1,5 @@
+// DARK MODE
+
 const themeBtn = document.getElementById("themeBtn");
 
 themeBtn.addEventListener("click", function () {
@@ -13,12 +15,16 @@ themeBtn.addEventListener("click", function () {
 });
 
 
+// PROJECT BUTTONS
+
 function projectAlert(projectName) {
 
     alert("You selected: " + projectName);
 
 }
 
+
+// CONTACT FORM
 
 const form = document.getElementById("contactForm");
 
@@ -35,5 +41,29 @@ form.addEventListener("submit", function(event) {
     result.style.color = "#22c55e";
 
     form.reset();
+
+});
+
+
+// BACK TO TOP
+
+const topBtn = document.getElementById("topBtn");
+
+window.addEventListener("scroll", function() {
+
+    if (window.scrollY > 300) {
+        topBtn.style.display = "block";
+    } else {
+        topBtn.style.display = "none";
+    }
+
+});
+
+topBtn.addEventListener("click", function() {
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 
 });
