@@ -3,283 +3,865 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saksham Gautam | CSE Student</title>
+    <title>Saksham Gautam | CSE Student & Software Developer</title>
+    <meta name="description" content="Portfolio of Saksham Gautam - Computer Science Engineering Student, Web Developer, and C++ Programmer. Exploring frontend, software engineering, and problem solving.">
+    <meta name="keywords" content="Saksham Gautam, Portfolio, CSE Student, Web Developer, Frontend Developer, C++, DSA, Software Engineer">
+    <meta name="author" content="Saksham Gautam">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Saksham Gautam | CSE Student & Developer Portfolio">
+    <meta property="og:description" content="Explore Saksham Gautam's projects, technical skills, and development journey.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%234f46e5'/><text x='16' y='22' font-family='sans-serif' font-weight='800' font-size='15' fill='white' text-anchor='middle'>SG</text></svg>">
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Background Ambient Glow Blobs -->
+    <div class="bg-glow blob-1" aria-hidden="true"></div>
+    <div class="bg-glow blob-2" aria-hidden="true"></div>
+    <div class="bg-glow blob-3" aria-hidden="true"></div>
 
-<header>
-    <nav>
-        <div class="logo">Saksham<span>.</span></div>
+    <!-- Header & Navigation -->
+    <header id="mainHeader">
+        <nav class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-text">Saksham</span><span class="logo-accent">.</span>
+                <span class="logo-tag">dev</span>
+            </a>
 
-        <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </div>
-
-        <button id="themeBtn">🌙</button>
-    </nav>
-</header>
-
-<section id="home" class="hero">
-
-    <div class="hero-content">
-        <p class="tag">WELCOME TO MY PORTFOLIO</p>
-
-        <h1>Hi, I'm <span>Saksham</span></h1>
-
-        <h2>Computer Science Engineering Student</h2>
-
-        <p class="intro">
-            I am learning programming, web development and
-            building real-world projects.
-        </p>
-
-        <div class="buttons">
-            <a href="#projects" class="primary-btn">View My Work →</a>
-            <a href="#contact" class="outline-btn">Contact Me</a>
-        </div>
-
-        <div class="socials">
-            <a href="https://github.com/" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-        </div>
-    </div>
-
-    <div class="profile-card">
-        <div class="profile-circle">SG</div>
-        <h3>Saksham Gautam</h3>
-        <p>CSE Student • Developer</p>
-
-        <div class="status">
-            <span></span> Learning & Building
-        </div>
-    </div>
-
-</section>
-
-
-<section id="about">
-
-    <p class="section-label">ABOUT ME</p>
-    <h2 class="section-title">A little about me</h2>
-
-    <div class="about-grid">
-
-        <div class="about-text">
-            <p>
-                I'm a Computer Science Engineering student
-                interested in technology and software development.
-            </p>
-
-            <p>
-                I am currently improving my programming,
-                frontend development and problem-solving skills
-                by creating practical projects.
-            </p>
-        </div>
-
-        <div class="info-card">
-
-            <div>
-                <strong>🎓</strong>
-                <h3>Education</h3>
-                <p>B.Tech CSE</p>
+            <!-- Desktop Navigation Links -->
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#profiles" class="nav-link">Profiles</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </div>
 
-            <div>
-                <strong>💻</strong>
-                <h3>Focus</h3>
-                <p>Web Development</p>
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button id="themeBtn" class="icon-btn" aria-label="Toggle Dark / Light Theme" title="Toggle Theme">
+                    <svg class="theme-icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="theme-icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+
+                <!-- Resume Download CTA in Navbar -->
+                <a href="#contact" class="btn btn-outline nav-cta">Let's Talk</a>
+
+                <!-- Mobile Hamburger Toggle -->
+                <button id="hamburgerBtn" class="hamburger-btn" aria-label="Open mobile navigation menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Drawer Menu -->
+        <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#skills" class="mobile-link">Skills</a>
+            <a href="#projects" class="mobile-link">Projects</a>
+            <a href="#profiles" class="mobile-link">Profiles</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+            <div class="mobile-menu-cta">
+                <a href="#contact" class="btn btn-primary full-width">Get In Touch 🚀</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="status-pill">
+                        <span class="pulse-dot"></span>
+                        <span>Available for Internships & Projects</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Saksham Gautam</span>
+                    </h1>
+
+                    <h2 class="hero-subtitle">
+                        <span class="typing-prefix">I am a </span>
+                        <span id="typewriter" class="typewriter-text"></span>
+                        <span class="cursor">|</span>
+                    </h2>
+
+                    <p class="hero-description">
+                        Computer Science Engineering student passionate about crafting sleek, modern web applications, 
+                        solving algorithmic problems with C++, and transforming ideas into clean, functional code.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View My Work</span>
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <span>Contact Me</span>
+                        </a>
+                        <a href="resume.pdf" download="Saksham_Gautam_Resume.pdf" id="resumeBtn" class="btn btn-glass" title="Download Resume">
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                            <span>Resume</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <span class="social-label">Connect:</span>
+                        <div class="social-links-row">
+                            <a href="https://github.com/sk7250gautam" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="GitHub Profile">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="LinkedIn Profile">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://leetcode.com/" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="LeetCode Profile">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 4.796 3.738 5.86 5.86 0 0 0 1.637-.021 5.94 5.94 0 0 0 3.208-1.536l3.89-3.766a1.376 1.376 0 0 0-.954-2.355 1.377 1.377 0 0 0-.956.402l-3.882 3.758a3.178 3.178 0 0 1-1.714.821 3.13 3.13 0 0 1-.876.012 3.17 3.17 0 0 1-2.56-1.996 3.125 3.125 0 0 1-.187-.544 3.01 3.01 0 0 1-.034-1.26 2.87 2.87 0 0 1 .658-1.127l3.855-4.127 5.405-5.787a1.376 1.376 0 0 0-.961-2.378zM20.598 10.66H9.728a1.37 1.37 0 0 0 0 2.74h10.87a1.37 1.37 0 0 0 0-2.74z"/></svg>
+                                <span>LeetCode</span>
+                            </a>
+                            <a href="mailto:saksham.sk7250@gmail.com" class="social-chip" id="copyEmailChip" aria-label="Copy Email Address" title="Click to copy email">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                <span id="copyEmailText">Email</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modern Interactive Profile Card -->
+                <div class="hero-card-wrapper">
+                    <div class="profile-card glass-panel" id="tiltCard">
+                        <div class="profile-card-header">
+                            <div class="profile-avatar-glow">
+                                <div class="profile-avatar">
+                                    <span class="avatar-initials">SG</span>
+                                </div>
+                            </div>
+                            <div class="profile-online-badge" title="Online & Coding"></div>
+                        </div>
+
+                        <div class="profile-info">
+                            <h3 class="profile-name">Saksham Gautam</h3>
+                            <p class="profile-role">B.Tech CSE (2025 - 2029) • Developer</p>
+                            <span class="profile-location">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                Kaithal, Haryana, India
+                            </span>
+                        </div>
+
+                        <div class="profile-stats-grid">
+                            <div class="stat-box">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-title">Projects</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-number">150+</span>
+                                <span class="stat-title">DSA Solved</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-number">2029</span>
+                                <span class="stat-title">CSE Grad</span>
+                            </div>
+                        </div>
+
+                        <div class="profile-tech-stack">
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">DSA</span>
+                            <span class="tech-tag">Git</span>
+                        </div>
+
+                        <div class="profile-status-bar">
+                            <span class="status-indicator"></span>
+                            <span class="status-msg">Currently building web apps & practicing DSA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT ME SECTION -->
+        <section id="about" class="section">
+            <div class="section-header">
+                <span class="section-tag">ABOUT ME</span>
+                <h2 class="section-title">Crafting code with curiosity & purpose</h2>
+                <div class="section-divider"></div>
             </div>
 
-            <div>
-                <strong>🚀</strong>
-                <h3>Goal</h3>
-                <p>Software Developer</p>
+            <div class="about-container">
+                <div class="about-bio glass-panel">
+                    <h3 class="about-bio-title">Hello! I'm Saksham Gautam 👋</h3>
+                    <p>
+                        I am a <strong>Computer Science Engineering student</strong> with an enduring passion for software development, problem-solving, and building modern digital experiences.
+                    </p>
+                    <p>
+                        My journey began with curiosity about how the web functions behind the scenes. Today, I actively build responsive web applications using <strong>HTML5, CSS3, and JavaScript</strong>, while honing my algorithmic problem-solving skills in <strong>C++ and Data Structures</strong>.
+                    </p>
+                    <p>
+                        I love turning real problems into intuitive, user-friendly software — like my <em>Cricket Live Tracker</em> and the <em>KUK Academic Notes Hub</em> for fellow university peers. I am always open to learning new frameworks, collaborating on open-source projects, and seeking software development internship roles.
+                    </p>
+
+                    <div class="about-highlights-row">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">⚡</span>
+                            <div>
+                                <strong>Fast Learner</strong>
+                                <p>Continuously upskilling in modern frontend & full stack ecosystems.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🎯</span>
+                            <div>
+                                <strong>Problem Solver</strong>
+                                <p>Deeply focused on core computer science foundations & DSA logic.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-cards-grid">
+                    <div class="info-card glass-panel">
+                        <div class="info-card-icon education-icon">🎓</div>
+                        <div class="info-card-content">
+                            <h4>Education</h4>
+                            <p class="info-primary">B.Tech in Computer Science</p>
+                            <p class="info-secondary">Kurukshetra University (KUK)</p>
+                            <span class="badge-year">2025 - 2029</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card glass-panel">
+                        <div class="info-card-icon focus-icon">💻</div>
+                        <div class="info-card-content">
+                            <h4>Current Focus</h4>
+                            <p class="info-primary">Frontend & Web Apps</p>
+                            <p class="info-secondary">JavaScript, Responsive UI & APIs</p>
+                            <span class="badge-status">Active Learning</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card glass-panel">
+                        <div class="info-card-icon goal-icon">🚀</div>
+                        <div class="info-card-content">
+                            <h4>Career Goal</h4>
+                            <p class="info-primary">Software Engineer (SDE)</p>
+                            <p class="info-secondary">Building scalable, impactful products</p>
+                            <span class="badge-goal">Target: SDE Roles</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card glass-panel">
+                        <div class="info-card-icon dsa-icon">🧩</div>
+                        <div class="info-card-content">
+                            <h4>DSA & Algorithms</h4>
+                            <p class="info-primary">Problem Solving in C++</p>
+                            <p class="info-secondary">Arrays, Trees, Graphs, Dynamic Prog.</p>
+                            <span class="badge-dsa">Daily Practice</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS & TECH STACK SECTION -->
+        <section id="skills" class="section">
+            <div class="section-header">
+                <span class="section-tag">MY ARSENAL</span>
+                <h2 class="section-title">Technical Skills & Technologies</h2>
+                <p class="section-subtitle">A curated snapshot of the languages, tools, and libraries I use to bring ideas to life.</p>
+                <div class="section-divider"></div>
             </div>
 
-            <div>
-                <strong>📚</strong>
-                <h3>Learning</h3>
-                <p>DSA & Programming</p>
+            <!-- Skills Category Filter Buttons -->
+            <div class="skills-filter-tabs">
+                <button class="filter-tab active" data-category="all">All Skills</button>
+                <button class="filter-tab" data-category="frontend">Frontend Web</button>
+                <button class="filter-tab" data-category="languages">Languages</button>
+                <button class="filter-tab" data-category="core">CS Fundamentals</button>
+                <button class="filter-tab" data-category="tools">Tools & Workflow</button>
             </div>
 
+            <div class="skills-showcase-grid" id="skillsGrid">
+                <!-- Skill: HTML5 -->
+                <div class="skill-box glass-panel" data-category="frontend">
+                    <div class="skill-header">
+                        <div class="skill-icon-svg html-color">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059-.001.23-2.625L4.475 4.406l.707 7.969h10.144l-.324 3.587-3.048.82-3.045-.82-.195-2.204H6.07l.383 4.484 5.503 1.524 5.513-1.524.757-8.492H8.531z"/></svg>
+                        </div>
+                        <span class="skill-level-badge">Advanced</span>
+                    </div>
+                    <h3 class="skill-name">HTML5</h3>
+                    <p class="skill-desc">Semantic markup, accessibility, modern Web APIs, and SEO best practices.</p>
+                    <div class="skill-progress-bar">
+                        <div class="skill-progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+
+                <!-- Skill: CSS3 -->
+                <div class="skill-box glass-panel" data-category="frontend">
+                    <div class="skill-header">
+                        <div class="skill-icon-svg css-color">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-7.14l.235 2.624h6.65l-.33 3.59-2.95.82-2.952-.82-.19-2.203H6.168l.385 4.484 5.405 1.523 5.415-1.524.717-8.08.12-1.353.48-5.39z"/></svg>
+                        </div>
+                        <span class="skill-level-badge">Advanced</span>
+                    </div>
+                    <h3 class="skill-name">CSS3 & Responsive</h3>
+                    <p class="skill-desc">Flexbox, CSS Grid, Glassmorphism, animations, media queries, and clean variables.</p>
+                    <div class="skill-progress-bar">
+                        <div class="skill-progress" style="width: 88%;"></div>
+                    </div>
+                </div>
+
+                <!-- Skill: JavaScript -->
+                <div class="skill-box glass-panel" data-category="frontend languages">
+                    <div class="skill-header">
+                        <div class="skill-icon-svg js-color">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.621-1.797-1.025-.112-.19-.138-.42-.086-.719.15-.499.702-.705 1.151-.62.436.082.784.393.99.771.559-.344.559-.344.877-.542-.298-.464-.636-.826-1.108-1.014-.602-.24-1.34-.23-1.91-.01-.701.27-1.14 1.1-1.032 1.954.12 1.05.807 1.681 1.798 2.062.802.329 1.827.65 1.999 1.13.19.55-.17 1.05-.72 1.17-.55.12-1.17-.18-1.48-.71l-.88.55c.34.69.96 1.15 1.77 1.25.96.12 1.84-.21 2.3-.87.46-.66.39-1.25.13-1.63zM12 12.01h1.53v6.78c0 1.21-.6 1.81-1.81 1.81-.46 0-.85-.11-1.16-.34l.34-.96c.23.16.49.25.77.25.48 0 .73-.25.73-.75v-6.79H12z"/></svg>
+                        </div>
+                        <span class="skill-level-badge">Proficient</span>
+                    </div>
+                    <h3 class="skill-name">JavaScript (ES6+)</h3>
+                    <p class="skill-desc">Async/Await, Fetch API, DOM manipulation, closures, event-driven architecture.</p>
+                    <div class="skill-progress-bar">
+                        <div class="skill-progress" style="width: 82%;"></div>
+                    </div>
+                </div>
+
+                <!-- Skill: C++ -->
+                <div class="skill-box glass-panel" data-category="languages core">
+                    <div class="skill-header">
+                        <div class="skill-icon-svg cpp-color">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.395 17.525a11.957 11.957 0 01-4.83 4.83 12.012 12.012 0 01-6.165 1.645A11.996 11.996 0 010 12 11.997 11.997 0 0111.4 0c2.203 0 4.298.59 6.165 1.645a11.97 11.97 0 014.83 4.83l-4.14 2.395a7.172 7.172 0 00-2.895-2.895 7.202 7.202 0 00-3.96-1.185 7.198 7.198 0 00-7.2 7.2 7.198 7.198 0 007.2 7.2c1.42 0 2.765-.41 3.96-1.185a7.17 7.17 0 002.895-2.895l4.14 2.325zM17.8 9.5h1.2v1.8h1.8v1.2h-1.8v1.8h-1.2v-1.8h-1.8v-1.2h1.8V9.5zm3.6 0h1.2v1.8h1.8v1.2h-1.8v1.8h-1.2v-1.8h-1.8v-1.2h1.8V9.5z"/></svg>
+                        </div>
+                        <span class="skill-level-badge">Primary DSA</span>
+                    </div>
+                    <h3 class="skill-name">C++ Programming</h3>
+                    <p class="skill-desc">Object-Oriented Programming (OOP), STL containers, memory pointers, time complexity.</p>
+                    <div class="skill-progress-bar">
+                        <div class="skill-progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <!-- Skill: Python -->
+                <div class="skill-box glass-panel" data-category="languages">
+                    <div class="skill-header">
+                        <div class="skill-icon-svg py-color">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.914 0C5.825 0 6.2 2.656 6.2 2.656l.006 2.753h5.814v.827H3.946S0 5.762 0 11.896c0 6.132 3.441 5.922 3.441 5.922h2.056v-2.883s-.112-3.442 3.39-3.442h5.803v-.845s.443-4.706-2.776-4.706V0zm-3.07 1.83a1.037 1.037 0 110 2.074 1.037 1.037 0 010-2.074zm3.242 22.17c6.09 0 5.714-2.656 5.714-2.656l-.006-2.753H11.98v-.827h8.074S24 18.238 24 12.104c0-6.132-3.441-5.922-3.441-5.922h-2.056v2.883s.112 3.442-3.39 3.442h-5.803v.845s-.443 4.706 2.776 4.706V24zm3.07-1.83a1.037 1.037 0 110-2.074 1.037 1.037 0 010 2.074z"/></svg>
+                        </div>
+                        <span class="skill-level-badge">Intermediate</span>
+                    </div>
+                    <h3 class="skill-name">Python</h3>
+                    <p class="skill-desc">Scripting, algorithmic logic, data processing, basic automation, and clean syntax.</p>
+                    <div class="skill-progress-bar">
+                        <div class="skill-progress" style="width: 75%;"></div>
+                    </div>
+                </div>
+
+                <!-- Skill: DSA -->
+                <div class="skill-box glass-panel" data-category="core">
+                    <div class="skill-header">
+                        <div class="skill-icon-svg dsa-color">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                        </div>
+                        <span class="skill-level-badge">Core Focus</span>
+                    </div>
+                    <h3 class="skill-name">Data Structures & Algo</h3>
+                    <p class="skill-desc">Linked Lists, Stacks, Queues, Binary Trees, Recursion, Binary Search, Sorting.</p>
+                    <div class="skill-progress-bar">
+                        <div class="skill-progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+
+                <!-- Skill: Git & GitHub -->
+                <div class="skill-box glass-panel" data-category="tools">
+                    <div class="skill-header">
+                        <div class="skill-icon-svg git-color">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.529-.527-.667-1.29-.413-1.948L12.78 8.913v5.674c.186.09.355.215.498.361.721.722.721 1.885 0 2.606-.721.721-1.883.721-2.604 0-.721-.721-.721-1.884 0-2.606.16-.16.347-.282.553-.362V8.825c-.206-.08-.393-.202-.553-.362-.534-.535-.668-1.309-.403-1.977L7.525 3.737.454 10.81c-.605.605-.605 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.187 0l10.425-10.358c.604-.604.604-1.583 0-2.188z"/></svg>
+                        </div>
+                        <span class="skill-level-badge">Version Control</span>
+                    </div>
+                    <h3 class="skill-name">Git & GitHub</h3>
+                    <p class="skill-desc">Repository management, branching, commits, pull requests, and collaborative workflows.</p>
+                    <div class="skill-progress-bar">
+                        <div class="skill-progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <!-- Skill: CS Fundamentals -->
+                <div class="skill-box glass-panel" data-category="core">
+                    <div class="skill-header">
+                        <div class="skill-icon-svg cs-color">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                        </div>
+                        <span class="skill-level-badge">Academic Core</span>
+                    </div>
+                    <h3 class="skill-name">OOPs & DBMS Basics</h3>
+                    <p class="skill-desc">Encapsulation, Inheritance, Polymorphism, Relational database concepts, SQL queries.</p>
+                    <div class="skill-progress-bar">
+                        <div class="skill-progress" style="width: 78%;"></div>
+                    </div>
+                </div>
+
+                <!-- Skill: VS Code & DevTools -->
+                <div class="skill-box glass-panel" data-category="tools">
+                    <div class="skill-header">
+                        <div class="skill-icon-svg tools-color">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </div>
+                        <span class="skill-level-badge">Workflow</span>
+                    </div>
+                    <h3 class="skill-name">VS Code & Chrome DevTools</h3>
+                    <p class="skill-desc">Efficient debugging, inspecting element DOM, network analysis, extensions, live server.</p>
+                    <div class="skill-progress-bar">
+                        <div class="skill-progress" style="width: 88%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED PROJECTS SECTION -->
+        <section id="projects" class="section">
+            <div class="section-header">
+                <span class="section-tag">PORTFOLIO</span>
+                <h2 class="section-title">Featured Work & Projects</h2>
+                <p class="section-subtitle">Real-world applications and tools I've built to solve practical challenges.</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: Cricket Score Website -->
+                <article class="project-card glass-panel">
+                    <div class="project-banner">
+                        <div class="project-banner-content">
+                            <div class="project-badge">🏏 Web Application</div>
+                            <div class="project-preview-mockup">
+                                <div class="mockup-header">
+                                    <span class="mock-dot red"></span>
+                                    <span class="mock-dot yellow"></span>
+                                    <span class="mock-dot green"></span>
+                                    <span class="mock-title">cricket-tracker.live</span>
+                                </div>
+                                <div class="mockup-body">
+                                    <div class="cricket-score-preview">
+                                        <div class="team-score">IND <strong>185/3</strong> <span class="overs">(18.2)</span></div>
+                                        <div class="match-status">Target: 178 • IND needs 7 runs in 10 balls</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-num">Project #01</span>
+                            <span class="project-status live">Featured</span>
+                        </div>
+
+                        <h3 class="project-title">Live Cricket Score Tracker</h3>
+                        <p class="project-desc">
+                            A dynamic cricket score and statistics web application engineered to display live match updates, 
+                            run rates, over summaries, and team lineups with an intuitive, mobile-friendly interface.
+                        </p>
+
+                        <div class="project-tech-tags">
+                            <span class="tag">JavaScript (ES6+)</span>
+                            <span class="tag">REST API</span>
+                            <span class="tag">CSS Grid</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <button class="btn btn-sm btn-primary" onclick="openProjectModal('cricket')">
+                                <span>Explore Details</span>
+                                <svg class="btn-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </button>
+                            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline" title="View Source on GitHub">
+                                <svg class="btn-icon-sm" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                                <span>Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: KUK Notes Hub -->
+                <article class="project-card glass-panel">
+                    <div class="project-banner">
+                        <div class="project-banner-content">
+                            <div class="project-badge">📚 University Resource</div>
+                            <div class="project-preview-mockup">
+                                <div class="mockup-header">
+                                    <span class="mock-dot red"></span>
+                                    <span class="mock-dot yellow"></span>
+                                    <span class="mock-dot green"></span>
+                                    <span class="mock-title">kuk-cse-hub.edu</span>
+                                </div>
+                                <div class="mockup-body">
+                                    <div class="notes-preview">
+                                        <div class="note-pill">📄 DSA Handouts (Sem 3)</div>
+                                        <div class="note-pill">📑 DBMS Previous Papers</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-num">Project #02</span>
+                            <span class="project-status in-progress">Academic</span>
+                        </div>
+
+                        <h3 class="project-title">KUK Notes & Study Hub</h3>
+                        <p class="project-desc">
+                            A student-focused academic hub for Kurukshetra University CSE undergraduates, providing easy access to 
+                            semester-wise course notes, syllabus outlines, and past year examination papers.
+                        </p>
+
+                        <div class="project-tech-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">LocalStorage</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <button class="btn btn-sm btn-primary" onclick="openProjectModal('kuk')">
+                                <span>Explore Details</span>
+                                <svg class="btn-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </button>
+                            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline" title="View Source on GitHub">
+                                <svg class="btn-icon-sm" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                                <span>Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: Personal Portfolio v2.0 -->
+                <article class="project-card glass-panel">
+                    <div class="project-banner">
+                        <div class="project-banner-content">
+                            <div class="project-badge">✨ Showcase</div>
+                            <div class="project-preview-mockup">
+                                <div class="mockup-header">
+                                    <span class="mock-dot red"></span>
+                                    <span class="mock-dot yellow"></span>
+                                    <span class="mock-dot green"></span>
+                                    <span class="mock-title">saksham-portfolio.dev</span>
+                                </div>
+                                <div class="mockup-body">
+                                    <div class="portfolio-preview">
+                                        <div class="port-hero">Hi, I'm Saksham ✨</div>
+                                        <div class="port-chips"><span>Dark/Light</span><span>Glass UI</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-num">Project #03</span>
+                            <span class="project-status live">Active</span>
+                        </div>
+
+                        <h3 class="project-title">Developer Portfolio v2.0</h3>
+                        <p class="project-desc">
+                            A modern, ultra-responsive personal developer portfolio featuring custom glassmorphism design, 
+                            interactive typewriter animations, persistent dark mode, and smooth scroll navigation.
+                        </p>
+
+                        <div class="project-tech-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">Modern CSS3</span>
+                            <span class="tag">Vanilla JS</span>
+                            <span class="tag">Glassmorphism</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <button class="btn btn-sm btn-primary" onclick="openProjectModal('portfolio')">
+                                <span>Explore Details</span>
+                                <svg class="btn-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </button>
+                            <a href="#home" class="btn btn-sm btn-outline">
+                                <span>Live Here</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- CODING PROFILES & ACHIEVEMENTS SECTION -->
+        <section id="profiles" class="section">
+            <div class="section-header">
+                <span class="section-tag">ONLINE PROFILES</span>
+                <h2 class="section-title">Coding Profiles & Problem Solving</h2>
+                <p class="section-subtitle">Consistent practice in data structures, algorithms, and collaborative open-source repositories.</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="profiles-grid">
+                <!-- LeetCode Card -->
+                <a href="https://leetcode.com/" target="_blank" rel="noopener noreferrer" class="profile-link-card glass-panel">
+                    <div class="profile-link-header">
+                        <div class="profile-link-icon leetcode-badge">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 4.796 3.738 5.86 5.86 0 0 0 1.637-.021 5.94 5.94 0 0 0 3.208-1.536l3.89-3.766a1.376 1.376 0 0 0-.954-2.355 1.377 1.377 0 0 0-.956.402l-3.882 3.758a3.178 3.178 0 0 1-1.714.821 3.13 3.13 0 0 1-.876.012 3.17 3.17 0 0 1-2.56-1.996 3.125 3.125 0 0 1-.187-.544 3.01 3.01 0 0 1-.034-1.26 2.87 2.87 0 0 1 .658-1.127l3.855-4.127 5.405-5.787a1.376 1.376 0 0 0-.961-2.378zM20.598 10.66H9.728a1.37 1.37 0 0 0 0 2.74h10.87a1.37 1.37 0 0 0 0-2.74z"/></svg>
+                        </div>
+                        <span class="external-arrow">↗</span>
+                    </div>
+                    <h3>LeetCode</h3>
+                    <p class="profile-handle">@SakshamGautam</p>
+                    <div class="profile-stats">
+                        <span class="badge">150+ Solved</span>
+                        <span class="badge">Arrays & Trees</span>
+                    </div>
+                </a>
+
+                <!-- GitHub Card -->
+                <a href="https://github.com/sk7250gautam" target="_blank" rel="noopener noreferrer" class="profile-link-card glass-panel">
+                    <div class="profile-link-header">
+                        <div class="profile-link-icon github-badge">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        </div>
+                        <span class="external-arrow">↗</span>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p class="profile-handle">@sk7250gautam</p>
+                    <div class="profile-stats">
+                        <span class="badge">Repositories</span>
+                        <span class="badge">Open Source</span>
+                    </div>
+                </a>
+
+                <!-- LinkedIn Card -->
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="profile-link-card glass-panel">
+                    <div class="profile-link-header">
+                        <div class="profile-link-icon linkedin-badge">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </div>
+                        <span class="external-arrow">↗</span>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <p class="profile-handle">Saksham Gautam</p>
+                    <div class="profile-stats">
+                        <span class="badge">Network</span>
+                        <span class="badge">Opportunities</span>
+                    </div>
+                </a>
+
+                <!-- GeeksforGeeks Card -->
+                <a href="https://www.geeksforgeeks.org/" target="_blank" rel="noopener noreferrer" class="profile-link-card glass-panel">
+                    <div class="profile-link-header">
+                        <div class="profile-link-icon gfg-badge">
+                            <span class="gfg-text">GfG</span>
+                        </div>
+                        <span class="external-arrow">↗</span>
+                    </div>
+                    <h3>GeeksforGeeks</h3>
+                    <p class="profile-handle">CSE Learning</p>
+                    <div class="profile-stats">
+                        <span class="badge">DSA Articles</span>
+                        <span class="badge">Practice</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section">
+            <div class="section-header">
+                <span class="section-tag">GET IN TOUCH</span>
+                <h2 class="section-title">Let's Connect & Build Something Great</h2>
+                <p class="section-subtitle">Interested in working together, discussing tech opportunities, or just saying hi? Reach out!</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Info Card -->
+                <div class="contact-info-panel glass-panel">
+                    <h3>Contact Information</h3>
+                    <p class="contact-lead">
+                        I'm currently seeking software development internships, freelance web projects, and exciting collaborations.
+                    </p>
+
+                    <div class="contact-items-list">
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">Email Me</span>
+                                <a href="mailto:saksham.sk7250@gmail.com" class="contact-value">saksham.sk7250@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">Kaithal, Haryana, India</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">Response Time</span>
+                                <span class="contact-value">Within 24 Hours</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-box">
+                        <span class="social-box-title">Follow & Connect</span>
+                        <div class="social-box-links">
+                            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                            </a>
+                            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Panel -->
+                <div class="contact-form-panel glass-panel">
+                    <form id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name <span class="required">*</span></label>
+                                <div class="input-wrapper">
+                                    <input type="text" id="name" name="name" placeholder="Saksham" required>
+                                </div>
+                                <span class="field-error" id="nameError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Your Email <span class="required">*</span></label>
+                                <div class="input-wrapper">
+                                    <input type="email" id="email" name="email" placeholder="saksham@example.com" required>
+                                </div>
+                                <span class="field-error" id="emailError"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <div class="input-wrapper">
+                                <input type="text" id="subject" name="subject" placeholder="Internship Opportunity / Project Collaboration">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message <span class="required">*</span></label>
+                            <div class="input-wrapper">
+                                <textarea id="message" name="message" rows="5" placeholder="Hi Saksham, I saw your portfolio and would like to connect regarding..." required></textarea>
+                            </div>
+                            <span class="field-error" id="messageError"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary full-width" id="submitBtn">
+                            <span class="btn-text">Send Message 🚀</span>
+                            <div class="btn-spinner hidden" id="btnSpinner"></div>
+                        </button>
+                    </form>
+
+                    <div id="formToast" class="form-toast hidden" role="alert"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#home" class="logo">
+                    <span class="logo-text">Saksham</span><span class="logo-accent">.</span>
+                    <span class="logo-tag">dev</span>
+                </a>
+                <p class="footer-tagline">
+                    Engineering reliable, accessible web experiences & solving problems one algorithm at a time.
+                </p>
+            </div>
+
+            <div class="footer-nav">
+                <span class="footer-heading">Quick Links</span>
+                <div class="footer-links-grid">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#profiles">Profiles</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Saksham Gautam. Built with semantic HTML5, modern CSS3 & JavaScript.</p>
+                <p class="footer-quote">"Always learning, always building." ⚡</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Floating Button -->
+    <button id="topBtn" class="back-to-top" aria-label="Back to top of page" title="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <!-- Project Details Modal Popup -->
+    <div id="projectModal" class="project-modal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-card glass-panel">
+            <button class="modal-close" id="modalClose" aria-label="Close dialog">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Dynamically populated via script.js -->
+            </div>
         </div>
     </div>
 
-</section>
+    <!-- Toast Notification Container -->
+    <div id="toastContainer" class="toast-container" aria-live="polite"></div>
 
-
-<section id="skills">
-
-    <p class="section-label">MY SKILLS</p>
-    <h2 class="section-title">Technologies I'm learning</h2>
-
-    <div class="skills-grid">
-
-        <div class="skill-card">
-            <div class="skill-icon">HTML</div>
-            <h3>HTML</h3>
-            <p>Building website structure.</p>
-        </div>
-
-        <div class="skill-card">
-            <div class="skill-icon">CSS</div>
-            <h3>CSS</h3>
-            <p>Creating responsive designs.</p>
-        </div>
-
-        <div class="skill-card">
-            <div class="skill-icon">JS</div>
-            <h3>JavaScript</h3>
-            <p>Adding website functionality.</p>
-        </div>
-
-        <div class="skill-card">
-            <div class="skill-icon">PY</div>
-            <h3>Python</h3>
-            <p>Programming and problem solving.</p>
-        </div>
-
-        <div class="skill-card">
-            <div class="skill-icon">C++</div>
-            <h3>C++</h3>
-            <p>Programming and DSA practice.</p>
-        </div>
-
-        <div class="skill-card">
-            <div class="skill-icon">WEB</div>
-            <h3>Frontend</h3>
-            <p>Building modern web interfaces.</p>
-        </div>
-
-    </div>
-
-</section>
-
-
-<section id="projects">
-
-    <p class="section-label">PROJECTS</p>
-    <h2 class="section-title">My work</h2>
-
-    <div class="projects-grid">
-
-        <div class="project">
-            <span class="number">01</span>
-            <h3>Personal Portfolio</h3>
-
-            <p>
-                My personal portfolio website created with
-                HTML, CSS and JavaScript.
-            </p>
-
-            <button onclick="projectAlert('Personal Portfolio')">
-                Explore →
-            </button>
-        </div>
-
-
-        <div class="project">
-            <span class="number">02</span>
-            <h3>Cricket Score Website</h3>
-
-            <p>
-                A cricket score website project designed to
-                display match information.
-            </p>
-
-            <button onclick="projectAlert('Cricket Score Website')">
-                Explore →
-            </button>
-        </div>
-
-
-        <div class="project">
-            <span class="number">03</span>
-            <h3>KUK Notes Website</h3>
-
-            <p>
-                A student-focused notes website concept for
-                organizing university study material.
-            </p>
-
-            <button onclick="projectAlert('KUK Notes Website')">
-                Explore →
-            </button>
-        </div>
-
-    </div>
-
-</section>
-
-
-<section id="contact">
-
-    <p class="section-label">CONTACT</p>
-    <h2 class="section-title">Let's connect</h2>
-
-    <div class="contact-container">
-
-        <p>
-            Have an idea or want to connect? Send me a message.
-        </p>
-
-        <form id="contactForm">
-
-            <input
-                type="text"
-                id="name"
-                placeholder="Your Name"
-                required
-            >
-
-            <input
-                type="email"
-                id="email"
-                placeholder="Your Email"
-                required
-            >
-
-            <textarea
-                id="message"
-                placeholder="Your Message"
-                required
-            ></textarea>
-
-            <button type="submit">
-                Send Message 🚀
-            </button>
-
-        </form>
-
-        <p id="formResult"></p>
-
-    </div>
-
-</section>
-
-
-<footer>
-
-    <h3>Saksham<span>.</span></h3>
-
-    <p>Built with HTML • CSS • JavaScript</p>
-
-    <p>© 2026 Saksham Gautam</p>
-
-</footer>
-
-
-<button id="topBtn">↑</button>
-
-<script src="script.js"></script>
-
+    <!-- Scripts -->
+    <script src="script.js"></script>
 </body>
 </html>
